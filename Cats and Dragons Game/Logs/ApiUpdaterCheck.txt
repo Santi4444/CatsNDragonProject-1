@@ -1,0 +1,10 @@
+[api-updater (non-obsolete-error-filter)] 14/03/2023 9:57:26 PM : Starting D:/BENILDE/Unity/2020.3.18f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 2815.3008ms
+moved types parse time: 103ms
+candidates parse time : 1ms
+C# parse time         : 1328ms
+candidates check time : 38ms
+console write time    : 2ms
+

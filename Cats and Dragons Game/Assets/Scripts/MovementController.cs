@@ -13,10 +13,15 @@ public class MovementController : MonoBehaviour
 
     public GameObject BattleCanvas;
 
+    public GameObject mainCamera;
 
-
-    private bool isMoving;
+    public bool isMoving;
     private Vector2 input;
+
+    public BattleUnit enemyCharacter;
+    public BattleSystem enemyBattleSystem;
+
+    public SampleWildEnemies testenemies;
 
     // Update is called once per frame
     void Update()
@@ -82,6 +87,10 @@ public class MovementController : MonoBehaviour
             Debug.Log("Touch");
             if (Random.Range(1, 101) <= 50)
 			{
+                //temp fix
+                testenemies = FindObjectOfType<SampleWildEnemies>().GetComponent<SampleWildEnemies>();
+                enemyBattleSystem.SetupBattle(testenemies.GetRandomEnemy());
+                mainCamera.SetActive(false);
                 BattleCanvas.SetActive(true);
                 isMoving = true;
                 Debug.Log("Random Encounter");
@@ -94,6 +103,7 @@ public class MovementController : MonoBehaviour
 	{
         isMoving = false;
         BattleCanvas.SetActive(false);
+        mainCamera.SetActive(true);
     }
 
 }
