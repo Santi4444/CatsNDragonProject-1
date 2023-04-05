@@ -29,4 +29,9 @@ public class BattleHud : MonoBehaviour
 	{
 		enemyHp.text = enemy.ToString();
 	}
+
+	public void UpdatePlayerHealth(int player)
+	{
+		playerHp.text = player.ToString();
+	}
 }

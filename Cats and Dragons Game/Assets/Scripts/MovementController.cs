@@ -88,7 +88,11 @@ public class MovementController : MonoBehaviour
             if (Random.Range(1, 101) <= 50)
 			{
                 //temp fix
-                testenemies = FindObjectOfType<SampleWildEnemies>().GetComponent<SampleWildEnemies>();
+                //testenemies = FindObjectOfType<SampleWildEnemies>().GetComponent<SampleWildEnemies>();
+
+                SampleWildEnemies wildEnemies = Physics2D.OverlapCircle(transform.position, 0.2f, randomArea).gameObject.GetComponent<SampleWildEnemies>();
+                //temp fix
+                testenemies = wildEnemies;
                 enemyBattleSystem.SetupBattle(testenemies.GetRandomEnemy());
                 mainCamera.SetActive(false);
                 BattleCanvas.SetActive(true);

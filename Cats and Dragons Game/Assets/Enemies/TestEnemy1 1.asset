@@ -16,5 +16,6 @@ MonoBehaviour:
   enemyHealth: 50
   enemySprite: {fileID: 21300000, guid: 49343e32c4fe7f746ab504b0b4ebb0c3, type: 3}
   enemyType: 0
+  enemyPoints: 1
   dialogue:
   - Im Test Enemy 1

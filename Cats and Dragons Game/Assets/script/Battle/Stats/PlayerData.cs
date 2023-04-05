@@ -5,6 +5,6 @@ using UnityEngine;
 public class PlayerData : MonoBehaviour
 {
 	public int playerHealth;
-	
+	public int playerFriendPoints;
 
 }

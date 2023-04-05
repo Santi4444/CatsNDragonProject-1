@@ -10,6 +10,8 @@ public class EnemyData : ScriptableObject
 	public Sprite enemySprite;
 	public EnemyType enemyType;
 
+	public int enemyPoints;
+
 	public string[] dialogue;
 	public enum EnemyType 
 	{ 
