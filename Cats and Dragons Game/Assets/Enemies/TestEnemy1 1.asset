@@ -13,9 +13,17 @@ MonoBehaviour:
   m_Name: TestEnemy1 1
   m_EditorClassIdentifier: 
   name: TestEnemy
-  enemyHealth: 50
-  enemySprite: {fileID: 21300000, guid: 49343e32c4fe7f746ab504b0b4ebb0c3, type: 3}
+  enemyHealth: 10
+  enemySprite: {fileID: 21300000, guid: 58d89be90f06e324ab9473126b11207d, type: 3}
   enemyType: 0
   enemyPoints: 1
   dialogue:
   - Im Test Enemy 1
+  enemyCorrectDialogue:
+  - Correct Dialogue
+  enemyWrongDialogue:
+  - Wrong Dialogue
+  enemyVictoryDialogue:
+  - Victory Dialogue
+  enemyLossDialogue:
+  - Loss Dialogue 1

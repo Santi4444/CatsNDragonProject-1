@@ -26,4 +26,8 @@ public class EnemyData : ScriptableObject
 		get { return name; }
 	}
 
+	public string[] enemyCorrectDialogue;
+	public string[] enemyWrongDialogue;
+	public string[] enemyVictoryDialogue;
+	public string[] enemyLossDialogue;
 }

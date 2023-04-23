@@ -110,4 +110,9 @@ public class MovementController : MonoBehaviour
         mainCamera.SetActive(true);
     }
 
+	public void RoadBlockMover(Vector3 targetLocation)
+	{
+		StopAllCoroutines();
+		StartCoroutine(Move(targetLocation));
+	}
 }

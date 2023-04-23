@@ -9,7 +9,7 @@ public class BattleSystem : MonoBehaviour
     public BattleUnit enemyUnit;
     public BattleHud enemyHud;
 
-    [SerializeField] private int EnemyHealth;
+	public int EnemyHealth;
 
     public EnemyData enemyData;
 
@@ -60,17 +60,19 @@ public class BattleSystem : MonoBehaviour
     {
         if (enemyData.enemyType == EnemyData.EnemyType.Sarcastic)
         {
-            Debug.Log("He is Saracastic");
+			enemyHud.PlayEnemyCorrectDialogue(enemyUnit.Enemy, "Player says sarcastic line");
+			Debug.Log("He is Saracastic");
 
             EnemyHealth -= 5;
             enemyHud.UpdateEnemyHealth(EnemyHealth);
-            CheckEnemyHpIsZero();
+            //CheckEnemyHpIsZero();
         }
         else
         {
-            playerHealth -= 1;
+			enemyHud.PlayEnemyIncorrectDialogue(enemyUnit.Enemy, "Player says sarcastic line");
+			playerHealth -= 1;
             enemyHud.UpdatePlayerHealth(playerHealth);
-            CheckPlayerHpIsZero();
+            //CheckPlayerHpIsZero();
         }
 
     }
@@ -79,17 +81,19 @@ public class BattleSystem : MonoBehaviour
     {
         if (enemyData.enemyType == EnemyData.EnemyType.Shy)
         {
-            Debug.Log("He is Shy");
+			enemyHud.PlayEnemyCorrectDialogue(enemyUnit.Enemy, "Player says shy line");
+			Debug.Log("He is Shy");
 
             EnemyHealth -= 5;
             enemyHud.UpdateEnemyHealth(EnemyHealth);
-            CheckEnemyHpIsZero();
+            //CheckEnemyHpIsZero();
         }
         else
         {
-            playerHealth -= 1;
+			enemyHud.PlayEnemyIncorrectDialogue(enemyUnit.Enemy, "Player says a shy line");
+			playerHealth -= 1;
             enemyHud.UpdatePlayerHealth(playerHealth);
-            CheckPlayerHpIsZero();
+            //CheckPlayerHpIsZero();
         }
 
     }
@@ -98,17 +102,19 @@ public class BattleSystem : MonoBehaviour
     {
         if (enemyData.enemyType == EnemyData.EnemyType.Serious)
         {
-            Debug.Log("He is Serious");
+			enemyHud.PlayEnemyCorrectDialogue(enemyUnit.Enemy, "Player says serious line");
+			Debug.Log("He is Serious");
 
             EnemyHealth -= 5;
             enemyHud.UpdateEnemyHealth(EnemyHealth);
-            CheckEnemyHpIsZero();
+            //CheckEnemyHpIsZero();
         }
         else
         {
-            playerHealth -= 1;
+			enemyHud.PlayEnemyIncorrectDialogue(enemyUnit.Enemy, "Player says a serious line");
+			playerHealth -= 1;
             enemyHud.UpdatePlayerHealth(playerHealth);
-            CheckPlayerHpIsZero();
+            //CheckPlayerHpIsZero();
         }
 
     }
@@ -117,17 +123,19 @@ public class BattleSystem : MonoBehaviour
     {
         if (enemyData.enemyType == EnemyData.EnemyType.Confidant)
         {
-            Debug.Log("He is Confidant");
+			enemyHud.PlayEnemyCorrectDialogue(enemyUnit.Enemy, "Player says confidant line");
+			Debug.Log("He is Confidant");
 
             EnemyHealth -= 5;
             enemyHud.UpdateEnemyHealth(EnemyHealth);
-            CheckEnemyHpIsZero();
+           // CheckEnemyHpIsZero();
         }
         else
         {
-            playerHealth -= 1;
+			enemyHud.PlayEnemyIncorrectDialogue(enemyUnit.Enemy, "Player says a confidant line");
+			playerHealth -= 1;
             enemyHud.UpdatePlayerHealth(playerHealth);
-            CheckPlayerHpIsZero();
+            //CheckPlayerHpIsZero();
         }
 
     }
