@@ -144,6 +144,19 @@ public class BattleHud : MonoBehaviour
 				yield return new WaitForSeconds(0.1f);
 			}
 			yield return new WaitForSeconds(1f);
+
+			dialogueBox.text = string.Empty;
+
+			string pointsGained = "You gained " + enemy.enemy.enemyPoints + " friend points";
+
+
+			foreach (char c in pointsGained.ToCharArray())
+			{
+				dialogueBox.text += c;
+				yield return new WaitForSeconds(0.1f);
+			}
+			yield return new WaitForSeconds(1f);
+
 			for (int i = 0; i < attackButtons.Length; i++)
 			{
 				attackButtons[i].interactable = true;
