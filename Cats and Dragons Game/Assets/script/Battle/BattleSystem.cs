@@ -140,7 +140,12 @@ public class BattleSystem : MonoBehaviour
 
     }
 
-    public void CheckEnemyHpIsZero()
+	public void ApologyAttack()
+	{
+		enemyHud.FinalBossInteraction();
+	}
+
+	public void CheckEnemyHpIsZero()
     {
         if (EnemyHealth <= 0)
         {
@@ -165,4 +170,10 @@ public class BattleSystem : MonoBehaviour
         choiceScreen.SetActive(false);
         attackScreen.SetActive(true);
     }
+
+	public void RunAwayChoice()
+	{
+		enemyHud.RunAwayFunction(playerMovement);
+	}
+
 }

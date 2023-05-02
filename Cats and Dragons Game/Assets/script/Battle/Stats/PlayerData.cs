@@ -6,5 +6,7 @@ public class PlayerData : MonoBehaviour
 {
 	public int playerHealth;
 	public int playerFriendPoints;
+	public bool SpecialItem;
+	 
 
 }

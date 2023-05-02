@@ -18,7 +18,8 @@ public class EnemyData : ScriptableObject
 		Sarcastic,
 		Shy,
 		Serious,
-		Confidant
+		Confidant,
+		Boss
 	}
 
 	public string GetName 

@@ -21,6 +21,8 @@ public class BattleHud : MonoBehaviour
 
 	public BattleSystem battleSystem;
 
+	public Button[] ChoiceButtons;
+
 	public void SetData(Enemy enemy)
 	{
 		enemyNameText.text = enemy.enemy.name;
@@ -177,6 +179,81 @@ public class BattleHud : MonoBehaviour
 				attackButtons[i].interactable = true;
 			}
 		}
+
+	}
+
+	public void FinalBossInteraction()
+	{
+		StartCoroutine(FinalBossDialogue());
+	}
+	IEnumerator FinalBossDialogue()
+	{
+		for (int i = 0; i < attackButtons.Length; i++)
+		{
+			attackButtons[i].interactable = false;
+		}
+		string apology = "I apologize";
+
+
+
+
+		//plays player action dialogue
+		dialogueBox.text = string.Empty;
+		foreach (char c in apology.ToCharArray())
+		{
+			dialogueBox.text += c;
+			yield return new WaitForSeconds(0.1f);
+		}
+
+		yield return new WaitForSeconds(1f);
+		string apology2 = "Oh I forgive you";
+
+		//plays player action dialogue
+		dialogueBox.text = string.Empty;
+		foreach (char c in apology2.ToCharArray())
+		{
+			dialogueBox.text += c;
+			yield return new WaitForSeconds(0.1f);
+		}
+
+		for (int i = 0; i < attackButtons.Length; i++)
+		{
+			attackButtons[i].interactable = true;
+		}
+	}
+
+	public void RunAwayFunction(MovementController mc)
+	{
+		StartCoroutine(RunAway(mc));
+	}
+	IEnumerator RunAway(MovementController mc)
+	{
+		for (int i = 0; i < ChoiceButtons.Length; i++)
+		{
+			ChoiceButtons[i].interactable = false;
+		}
+		string apology = "You ran away";
+
+
+
+
+		//plays player action dialogue
+		dialogueBox.text = string.Empty;
+		foreach (char c in apology.ToCharArray())
+		{
+			dialogueBox.text += c;
+			yield return new WaitForSeconds(0.1f);
+		}
+
+		yield return new WaitForSeconds(1f);
+
+		for (int i = 0; i < ChoiceButtons.Length; i++)
+		{
+			ChoiceButtons[i].interactable = true;
+		}
+
+		mc.LeaveRandomEncounter();
+
 
 	}
 
