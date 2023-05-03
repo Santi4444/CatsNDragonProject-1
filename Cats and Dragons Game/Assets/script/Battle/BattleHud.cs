@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+//using UnityEngine.UIElements;
 
 public class BattleHud : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class BattleHud : MonoBehaviour
 
 	public Button[] ChoiceButtons;
 
+	public SpriteRenderer backGround;
+
 	public void SetData(Enemy enemy)
 	{
 		enemyNameText.text = enemy.enemy.name;
@@ -31,6 +34,8 @@ public class BattleHud : MonoBehaviour
 		playerHp.text = player.playerHealth.ToString();
 
 		dialogueBox.text = enemy.enemy.dialogue[0];
+
+		backGround.sprite = enemy.enemy.background;
 	}
 
 	public void UpdateEnemyHealth(int enemy)

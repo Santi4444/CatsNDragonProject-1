@@ -27,3 +27,4 @@ MonoBehaviour:
   - vic
   enemyLossDialogue:
   - los
+  background: {fileID: 21300000, guid: 2adde886c352382418762d1fd0c78902, type: 3}

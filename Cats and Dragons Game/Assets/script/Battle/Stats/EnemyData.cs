@@ -31,4 +31,6 @@ public class EnemyData : ScriptableObject
 	public string[] enemyWrongDialogue;
 	public string[] enemyVictoryDialogue;
 	public string[] enemyLossDialogue;
+
+	public Sprite background;
 }

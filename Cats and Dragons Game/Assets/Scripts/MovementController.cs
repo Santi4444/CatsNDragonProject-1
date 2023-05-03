@@ -115,4 +115,11 @@ public class MovementController : MonoBehaviour
 		StopAllCoroutines();
 		StartCoroutine(Move(targetLocation));
 	}
+
+	public void Teleport(Vector3 targetPos)
+	{
+		isMoving = true;
+		transform.position = targetPos;
+		isMoving = false;
+	}
 }
