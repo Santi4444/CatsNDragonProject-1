@@ -23,8 +23,16 @@ public class MovementController : MonoBehaviour
 
     public SampleWildEnemies testenemies;
 
-    // Update is called once per frame
-    void Update()
+    public Animator animator;
+
+
+	private void Awake()
+	{
+		animator = GetComponent<Animator>();
+	}
+
+	// Update is called once per frame
+	void Update()
     {
         if(!isMoving)
 		{
@@ -39,7 +47,11 @@ public class MovementController : MonoBehaviour
 
             if(input != Vector2.zero)
 			{
-                var targetPos = transform.position;
+				animator.SetFloat("moveX", input.x);
+				animator.SetFloat("moveY", input.y);
+
+
+				var targetPos = transform.position;
                 targetPos.x += input.x;
                 targetPos.y += input.y;
 
@@ -49,6 +61,8 @@ public class MovementController : MonoBehaviour
                 }
                 
 			}
+
+            animator.SetBool("isMoving", isMoving);
 		}
     }
 

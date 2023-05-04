@@ -26,13 +26,14 @@ public class Teleporter : MonoBehaviour
 		//collision.gameObject.GetComponent<MovementController>().enabled = false;
 		//collision.GetComponent<MovementController>().Teleport(position);
 		//collision.gameObject.GetComponent<MovementController>().enabled = true;
-
+		collision.gameObject.GetComponent<MovementController>().animator.SetBool("isMoving", false);
 		collision.gameObject.GetComponent<MovementController>().enabled = false;
 		//collision.GetComponent<SpriteRenderer>().color.a =;
 		yield return new WaitForSeconds(2f);
 		Debug.Log("new tele location");
 		collision.GetComponent<MovementController>().Teleport(position);
 		collision.gameObject.GetComponent<MovementController>().enabled = true;
+
 
 	}
 

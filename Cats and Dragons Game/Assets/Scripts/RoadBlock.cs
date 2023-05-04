@@ -31,15 +31,21 @@ public class RoadBlock : MonoBehaviour
 
     IEnumerator MovePlayer(Collider2D collision, string playerLine)
 	{
+		
 		Debug.Log("2nd location");
 		dialogueBox.text = string.Empty;
 		dialogueContainer.SetActive(true);
 		collision.gameObject.GetComponent<MovementController>().enabled = false;
+
+		collision.gameObject.GetComponent<MovementController>().animator.SetBool("isMoving", false);
+
 		if (playerData.playerFriendPoints < pointAmount)
 		{
+			
 
 			foreach (char c in playerLine.ToCharArray())
 			{
+				
 				dialogueBox.text += c;
 				yield return new WaitForSeconds(0.1f);
 			}
@@ -50,9 +56,11 @@ public class RoadBlock : MonoBehaviour
 			dialogueContainer.SetActive(false);
 		}else
 		{
+			
 			string pass = "You passed";
 			foreach (char c in pass.ToCharArray())
 			{
+				
 				dialogueBox.text += c;
 				yield return new WaitForSeconds(0.1f);
 			}
