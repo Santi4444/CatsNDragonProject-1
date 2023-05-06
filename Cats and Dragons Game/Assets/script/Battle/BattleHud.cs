@@ -26,6 +26,9 @@ public class BattleHud : MonoBehaviour
 
 	public SpriteRenderer backGround;
 
+
+	
+
 	public void SetData(Enemy enemy)
 	{
 		enemyNameText.text = enemy.enemy.name;
@@ -156,6 +159,7 @@ public class BattleHud : MonoBehaviour
 
 			string pointsGained = "You gained " + enemy.enemy.enemyPoints + " friend points";
 
+			
 
 			foreach (char c in pointsGained.ToCharArray())
 			{
@@ -169,6 +173,7 @@ public class BattleHud : MonoBehaviour
 				attackButtons[i].interactable = true;
 			}
 			battleSystem.CheckEnemyHpIsZero();
+
 		}
 		else
 		{
@@ -183,6 +188,8 @@ public class BattleHud : MonoBehaviour
 			{
 				attackButtons[i].interactable = true;
 			}
+
+
 		}
 
 	}
@@ -258,6 +265,7 @@ public class BattleHud : MonoBehaviour
 		}
 
 		mc.LeaveRandomEncounter();
+
 
 
 	}

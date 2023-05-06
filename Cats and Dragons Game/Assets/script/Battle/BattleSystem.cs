@@ -23,8 +23,12 @@ public class BattleSystem : MonoBehaviour
 
     public PlayerData playerStats;
 
-    // Start is called before the first frame update
-    void Start()
+	public GameObject OverworldGameObject;
+	public TextMeshProUGUI FriendPointsNum;
+
+
+	// Start is called before the first frame update
+	void Start()
     {
         //SetupBattle();
     }
@@ -46,7 +50,10 @@ public class BattleSystem : MonoBehaviour
         enemyData = enemy;
 
         playerHealth = enemyHud.player.playerHealth;
-    }
+
+        OverworldGameObject.SetActive(false);
+
+	}
 
     public void TestAttack()
     {
@@ -153,7 +160,12 @@ public class BattleSystem : MonoBehaviour
             attackScreen.SetActive(false);
             playerMovement.LeaveRandomEncounter();
             playerStats.playerFriendPoints += enemyData.enemyPoints;
-        }
+
+            string playerPoints = playerStats.playerFriendPoints.ToString();
+            FriendPointsNum.text = playerPoints;
+
+
+		}
     }
     public void CheckPlayerHpIsZero()
     {

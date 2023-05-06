@@ -25,7 +25,7 @@ public class MovementController : MonoBehaviour
 
     public Animator animator;
 
-
+	public GameObject OverworldGameObject;
 	private void Awake()
 	{
 		animator = GetComponent<Animator>();
@@ -122,7 +122,9 @@ public class MovementController : MonoBehaviour
         isMoving = false;
         BattleCanvas.SetActive(false);
         mainCamera.SetActive(true);
-    }
+		OverworldGameObject.SetActive(true);
+
+	}
 
 	public void RoadBlockMover(Vector3 targetLocation)
 	{
