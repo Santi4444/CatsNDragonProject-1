@@ -174,7 +174,8 @@ public class BattleSystem : MonoBehaviour
             choiceScreen.SetActive(true);
             attackScreen.SetActive(false);
             playerMovement.LeaveRandomEncounter();
-        }
+			playerMovement.enabled = true;
+		}
     }
 
     public void OpenAttackScreen()

@@ -16,15 +16,15 @@ MonoBehaviour:
   enemyHealth: 1
   enemySprite: {fileID: 21300000, guid: 7364a590393aee746a0f65e7145c3427, type: 3}
   enemyType: 0
-  enemyPoints: 25
+  enemyPoints: 10
   dialogue:
-  - 
+  - Hmmmm, we got some fresh meat, hi there little lady
   enemyCorrectDialogue:
-  - 
+  - "Yeah that\u2019s right!"
   enemyWrongDialogue:
-  - 
+  - Ughh..
   enemyVictoryDialogue:
-  - 
+  - " Let\u2019s play when you\u2019re a bit more grown up"
   enemyLossDialogue:
-  - 
+  - "I haven\u2019t had this much excitement in a long time"
   background: {fileID: 21300000, guid: f8783b04d7dee164292874cf46c55281, type: 3}

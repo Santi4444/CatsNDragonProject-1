@@ -18,13 +18,14 @@ MonoBehaviour:
   enemyType: 4
   enemyPoints: 1
   dialogue:
-  - 
+  - "We\u2019ve been going on just fine without talking, so what makes you think
+    this is any different"
   enemyCorrectDialogue:
   - 
   enemyWrongDialogue:
-  - 
+  - 'I don''t think so! '
   enemyVictoryDialogue:
-  - 
+  - Dragon used magic*
   enemyLossDialogue:
   - 
   background: {fileID: 21300000, guid: f8783b04d7dee164292874cf46c55281, type: 3}

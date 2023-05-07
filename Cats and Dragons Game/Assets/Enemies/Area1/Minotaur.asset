@@ -15,16 +15,17 @@ MonoBehaviour:
   name: Mino
   enemyHealth: 1
   enemySprite: {fileID: 21300000, guid: 16171c8ae8c61004dada6b48baee20f8, type: 3}
-  enemyType: 0
+  enemyType: 3
   enemyPoints: 5
   dialogue:
-  - 
+  - "Hey let\u2019s have a chat yeah?"
   enemyCorrectDialogue:
-  - 
+  - 'Hahahahaahah! '
+  - "That's the spirit kiddo!\t"
   enemyWrongDialogue:
-  - 
+  - "Hmmm, that doesn\u2019t seem right"
   enemyVictoryDialogue:
-  - 
+  - Maybe work on your skills a little there champ
   enemyLossDialogue:
-  - 
+  - Hahah! See ya later kid!
   background: {fileID: 21300000, guid: 463c16f927fc39d4ea5562c75b367711, type: 3}

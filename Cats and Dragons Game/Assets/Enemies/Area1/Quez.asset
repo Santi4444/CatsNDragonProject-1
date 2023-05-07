@@ -18,13 +18,14 @@ MonoBehaviour:
   enemyType: 3
   enemyPoints: 5
   dialogue:
-  - 
+  - '*ominous bell ringing in the distance'
   enemyCorrectDialogue:
-  - 
+  - "aww that was so much fun!!\t"
+  - "Let\u2019s play again!"
   enemyWrongDialogue:
-  - 
+  - How boring!!
   enemyVictoryDialogue:
-  - 
+  - "Well that wasn\u2019t fun of you!\t"
   enemyLossDialogue:
-  - 
+  - I had so much fun with you!
   background: {fileID: 21300000, guid: 463c16f927fc39d4ea5562c75b367711, type: 3}

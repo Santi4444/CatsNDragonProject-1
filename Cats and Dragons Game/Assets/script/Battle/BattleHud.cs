@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 //using UnityEngine.UIElements;
 
 public class BattleHud : MonoBehaviour
@@ -200,6 +201,9 @@ public class BattleHud : MonoBehaviour
 	}
 	IEnumerator FinalBossDialogue()
 	{
+
+		SceneManager.LoadScene("EndingCutscene");
+
 		for (int i = 0; i < attackButtons.Length; i++)
 		{
 			attackButtons[i].interactable = false;

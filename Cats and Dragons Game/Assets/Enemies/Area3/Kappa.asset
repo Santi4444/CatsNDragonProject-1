@@ -16,15 +16,15 @@ MonoBehaviour:
   enemyHealth: 1
   enemySprite: {fileID: 21300000, guid: 58d89be90f06e324ab9473126b11207d, type: 3}
   enemyType: 1
-  enemyPoints: 25
+  enemyPoints: 10
   dialogue:
-  - 
+  - "\u2026.\t*kappy seems hesitant"
   enemyCorrectDialogue:
-  - 
+  - "Oh? I\u2019m glad we can agree with that.."
   enemyWrongDialogue:
-  - 
+  - "Mmmmm,I don\u2019t know about that then\u2026."
   enemyVictoryDialogue:
-  - 
+  - ' * leaves*'
   enemyLossDialogue:
-  - 
+  - Hey, I had a great time..
   background: {fileID: 21300000, guid: f8783b04d7dee164292874cf46c55281, type: 3}

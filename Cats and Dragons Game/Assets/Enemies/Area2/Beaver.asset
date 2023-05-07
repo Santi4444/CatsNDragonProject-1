@@ -16,15 +16,15 @@ MonoBehaviour:
   enemyHealth: 1
   enemySprite: {fileID: 21300000, guid: 55b938ed5ca2df4479242a5d657f3748, type: 3}
   enemyType: 0
-  enemyPoints: 10
+  enemyPoints: 5
   dialogue:
-  - 
+  - Woodn't you care to play little sprout?
   enemyCorrectDialogue:
-  - 
+  - hahahahaha! fanta-stick!
   enemyWrongDialogue:
-  - 
+  - Heh.
   enemyVictoryDialogue:
-  - 
+  - "Oak-ay i didn\u2019t be-leaf you\u2019d get this far anyway. "
   enemyLossDialogue:
-  - 
+  - " It\u2019s time for you to re-tree-at little sprout."
   background: {fileID: 21300000, guid: f8783b04d7dee164292874cf46c55281, type: 3}

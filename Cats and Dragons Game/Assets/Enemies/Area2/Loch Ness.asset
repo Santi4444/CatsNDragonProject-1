@@ -16,7 +16,7 @@ MonoBehaviour:
   enemyHealth: 1
   enemySprite: {fileID: 21300000, guid: 792b2f15d25ab7a48894d47c658beeff, type: 3}
   enemyType: 2
-  enemyPoints: 10
+  enemyPoints: 5
   dialogue:
   - Well well well,look who decided to walk in
   enemyCorrectDialogue:
