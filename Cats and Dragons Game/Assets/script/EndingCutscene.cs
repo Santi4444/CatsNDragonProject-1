@@ -66,6 +66,10 @@ public class EndingCutscene : MonoBehaviour
 		}
 		else if (counter == 14)
 		{
+			animator.SetTrigger("End13");
+			
+		}else if(counter >= 15)
+		{
 			SceneManager.LoadScene("TitleScreen");
 		}
 

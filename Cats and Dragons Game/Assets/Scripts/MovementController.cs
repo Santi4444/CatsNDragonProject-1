@@ -123,6 +123,7 @@ public class MovementController : MonoBehaviour
         BattleCanvas.SetActive(false);
         mainCamera.SetActive(true);
 		OverworldGameObject.SetActive(true);
+        this.gameObject.GetComponent<MovementController>().enabled = true;
 
 	}
 
