@@ -24,7 +24,7 @@ public class RoadBlock : MonoBehaviour
 	{
 		Debug.Log("enter");
 
-		StartCoroutine(MovePlayer(collision, "You lack friend points"));
+		StartCoroutine(MovePlayer(collision, "You need " + pointAmount + " friend points"));
 
 		//collision.GetComponent<MovementController>().RoadBlockMover(moveLocation);
 	}
