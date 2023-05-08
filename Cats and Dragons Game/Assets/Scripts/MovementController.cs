@@ -26,7 +26,9 @@ public class MovementController : MonoBehaviour
     public Animator animator;
 
 	public GameObject OverworldGameObject;
-	private void Awake()
+
+    public AudioManager audioManager;
+    private void Awake()
 	{
 		animator = GetComponent<Animator>();
 	}
@@ -101,6 +103,7 @@ public class MovementController : MonoBehaviour
             Debug.Log("Touch");
             if (Random.Range(1, 101) <= 50)
 			{
+                audioManager.playBattleMusic();
                 //temp fix
                 //testenemies = FindObjectOfType<SampleWildEnemies>().GetComponent<SampleWildEnemies>();
 
@@ -119,6 +122,7 @@ public class MovementController : MonoBehaviour
 
     public void LeaveRandomEncounter()
 	{
+        audioManager.playBackgroundMusic();
         isMoving = false;
         BattleCanvas.SetActive(false);
         mainCamera.SetActive(true);
