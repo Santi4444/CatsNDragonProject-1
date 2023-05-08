@@ -16,7 +16,7 @@ MonoBehaviour:
   enemyHealth: 1
   enemySprite: {fileID: 21300000, guid: 16171c8ae8c61004dada6b48baee20f8, type: 3}
   enemyType: 3
-  enemyPoints: 5
+  enemyPoints: 1
   dialogue:
   - "Hey let\u2019s have a chat yeah?"
   enemyCorrectDialogue:

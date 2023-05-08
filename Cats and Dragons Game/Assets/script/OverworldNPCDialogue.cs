@@ -12,6 +12,8 @@ public class OverworldNPCDialogue : MonoBehaviour
 	public string dialogue;
 	private int index;
 
+	[SerializeField] private GameObject dialogueNPCTextBox;
+
 	//public GameObject contButton;
 	public float wordSpeed;
 	public bool playerIsClose;
@@ -82,6 +84,10 @@ public class OverworldNPCDialogue : MonoBehaviour
 		{
 			movementController = other.GetComponent<MovementController>();
 			playerIsClose = true;
+
+
+			dialogueNPCTextBox.gameObject.SetActive(true);
+			
 		}
 	}
 
@@ -107,6 +113,7 @@ public class OverworldNPCDialogue : MonoBehaviour
 		{
 			playerIsClose = false;
 			zeroText();
+			dialogueNPCTextBox.gameObject.SetActive(false);
 		}
 	}
 }

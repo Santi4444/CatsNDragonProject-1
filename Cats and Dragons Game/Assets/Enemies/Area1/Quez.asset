@@ -16,7 +16,7 @@ MonoBehaviour:
   enemyHealth: 1
   enemySprite: {fileID: 21300000, guid: 95c5d446e4504484e99abc7fdcc1e324, type: 3}
   enemyType: 3
-  enemyPoints: 5
+  enemyPoints: 1
   dialogue:
   - '*ominous bell ringing in the distance'
   enemyCorrectDialogue:
