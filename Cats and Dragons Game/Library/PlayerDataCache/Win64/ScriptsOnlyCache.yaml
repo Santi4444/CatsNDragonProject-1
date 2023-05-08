@@ -6,13 +6,17 @@ ScriptsOnlyBuild:
     - BattleUnit
     - BossFightTrigger
     - CameraFollow
+    - EndingCutscene
     - EnemyData
+    - LoadScene
     - MovementController
     - OpeningCutsceneButton
+    - OverworldNPCDialogue
     - PlayerData
     - PlayerMovement
     - RoadBlock
     - SampleWildEnemies
+    - SpecialItem
     - Teleporter
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -45,6 +49,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -65,7 +71,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/OpeningCutscene.unity:
+    Assets/Scenes/EndingCutscene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -77,8 +83,6 @@ ScriptsOnlyBuild:
     - Class: 28
       Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -95,27 +99,76 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 1894}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 2278}
+      Script: {instanceID: 2660}
     - Class: 114
-      Script: {instanceID: 2708}
+      Script: {instanceID: 2824}
     - Class: 114
       Script: {instanceID: 2872}
     - Class: 114
-      Script: {instanceID: 2920}
+      Script: {instanceID: 3292}
     - Class: 114
-      Script: {instanceID: 3340}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3464}
+      Script: {instanceID: 3490}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/OpeningCutscene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 4230}
+      Script: {instanceID: 1476}
     - Class: 114
-      Script: {instanceID: 4664}
+      Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 4818}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 5208}
+      Script: {instanceID: 2660}
+    - Class: 114
+      Script: {instanceID: 2824}
+    - Class: 114
+      Script: {instanceID: 2872}
+    - Class: 114
+      Script: {instanceID: 3292}
+    - Class: 114
+      Script: {instanceID: 3416}
+    - Class: 114
+      Script: {instanceID: 4188}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -168,45 +221,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1478}
     - Class: 114
-      Script: {instanceID: 1858}
+      Script: {instanceID: 1810}
     - Class: 114
-      Script: {instanceID: 1894}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 2286}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2386}
+      Script: {instanceID: 2338}
     - Class: 114
-      Script: {instanceID: 2460}
+      Script: {instanceID: 2412}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2630}
     - Class: 114
-      Script: {instanceID: 2708}
+      Script: {instanceID: 2660}
+    - Class: 114
+      Script: {instanceID: 2824}
+    - Class: 114
+      Script: {instanceID: 2858}
     - Class: 114
       Script: {instanceID: 2872}
     - Class: 114
-      Script: {instanceID: 2906}
+      Script: {instanceID: 3198}
     - Class: 114
-      Script: {instanceID: 2920}
+      Script: {instanceID: 3292}
     - Class: 114
-      Script: {instanceID: 3246}
+      Script: {instanceID: 3328}
     - Class: 114
-      Script: {instanceID: 3340}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3376}
+      Script: {instanceID: 3550}
     - Class: 114
-      Script: {instanceID: 3464}
+      Script: {instanceID: 3600}
     - Class: 114
-      Script: {instanceID: 3596}
+      Script: {instanceID: 3766}
     - Class: 114
-      Script: {instanceID: 3646}
+      Script: {instanceID: 3962}
     - Class: 114
-      Script: {instanceID: 3812}
+      Script: {instanceID: 4030}
     - Class: 114
-      Script: {instanceID: 4008}
+      Script: {instanceID: 4072}
     - Class: 114
-      Script: {instanceID: 5086}
+      Script: {instanceID: 5044}
     - Class: 114
-      Script: {instanceID: 5126}
+      Script: {instanceID: 5084}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -232,6 +289,67 @@ ScriptsOnlyBuild:
     - Class: 483693784
       Script: {instanceID: 0}
     - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/TitleScreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1476}
+    - Class: 114
+      Script: {instanceID: 1478}
+    - Class: 114
+      Script: {instanceID: 1846}
+    - Class: 114
+      Script: {instanceID: 2230}
+    - Class: 114
+      Script: {instanceID: 2660}
+    - Class: 114
+      Script: {instanceID: 2824}
+    - Class: 114
+      Script: {instanceID: 2872}
+    - Class: 114
+      Script: {instanceID: 3292}
+    - Class: 114
+      Script: {instanceID: 3416}
+    - Class: 114
+      Script: {instanceID: 4622}
+    - Class: 114
+      Script: {instanceID: 4776}
+    - Class: 114
+      Script: {instanceID: 4914}
+    - Class: 114
+      Script: {instanceID: 5166}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -338,7 +456,7 @@ ScriptsOnlyBuild:
     className: WarpTextExample
   - hash:
       serializedVersion: 2
-      Hash: a21e8db22fa727f9e56d7779b69c9a3b
+      Hash: 75c1fd2e907b1eeef0cf83321d26b877
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BossFightTrigger
@@ -614,6 +732,12 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
+      Hash: 6f2319976873cf4739c50e96c8332093
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndingCutscene
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -626,7 +750,7 @@ ScriptsOnlyBuild:
     className: RoadBlock
   - hash:
       serializedVersion: 2
-      Hash: 252258ef0a31d16a8fedc5db3dea429e
+      Hash: 69aa2b9e6998c5387ff8ec37297d6af0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Teleporter
@@ -732,6 +856,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: 5513f95fc6b022aa5402a4dbc0d02c87
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OverworldNPCDialogue
+  - hash:
+      serializedVersion: 2
+      Hash: 69e3702e6f30dd897bbbd930e4bbff1e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpecialItem
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -1058,7 +1194,8 @@ ScriptsOnlyBuild:
     className: TMP_TextEventCheck
   platform: 19
   scenePathNames:
+  - Assets/Scenes/TitleScreen.unity
   - Assets/Scenes/OpeningCutscene.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/santi/OneDrive/Documents/BENILDE/GUILD/Builds/Test 4/Cats
-    and Dragons Game.exe
+  - Assets/Scenes/EndingCutscene.unity
+  playerPath: C:/BENILDE/Backup/cND VERSION1.01/Cats and Dragons Game.exe
