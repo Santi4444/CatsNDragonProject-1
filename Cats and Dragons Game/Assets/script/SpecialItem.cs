@@ -18,6 +18,10 @@ public class SpecialItem : MonoBehaviour
 	[SerializeField] private GameObject player;
 	[SerializeField] private bool specialItem = false;
 
+
+	[SerializeField] private GameObject dialogueNPCTextBox;
+	[SerializeField] private MovementController movementController;
+
 	// Update is called once per frame
 	void Update()
 	{
@@ -67,8 +71,9 @@ public class SpecialItem : MonoBehaviour
 		foreach (char c in dialogue.ToCharArray())
 		{
 			dialogueText.text += c;
-			yield return new WaitForSeconds(0.1f);
+			yield return new WaitForSeconds(wordSpeed);
 		}
+		yield return new WaitForSeconds(2f);
 
 
 		controller.enabled = true;
@@ -88,7 +93,7 @@ public class SpecialItem : MonoBehaviour
 		foreach (char c in dialogue.ToCharArray())
 		{
 			dialogueText.text += c;
-			yield return new WaitForSeconds(0.1f);
+			yield return new WaitForSeconds(wordSpeed);
 		}
 
 		
@@ -102,9 +107,9 @@ public class SpecialItem : MonoBehaviour
 		foreach (char c in itemDialogue.ToCharArray())
 		{
 			dialogueText.text += c;
-			yield return new WaitForSeconds(0.1f);
+			yield return new WaitForSeconds(wordSpeed);
 		}
-
+		yield return new WaitForSeconds(1f);
 
 		controller.enabled = true;
 		dialoguePanel.SetActive(false);
@@ -117,8 +122,10 @@ public class SpecialItem : MonoBehaviour
 	{
 		if (other.CompareTag("Player"))
 		{
+			movementController = other.GetComponent<MovementController>();
 			player = other.gameObject;
 			playerIsClose = true;
+			dialogueNPCTextBox.gameObject.SetActive(true);
 		}
 	}
 
@@ -128,6 +135,9 @@ public class SpecialItem : MonoBehaviour
 		{
 			playerIsClose = false;
 			zeroText();
-		}
+			dialogueNPCTextBox.gameObject.SetActive(false);
+		}	
 	}
+
+
 }

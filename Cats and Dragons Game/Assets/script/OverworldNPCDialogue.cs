@@ -63,7 +63,7 @@ public class OverworldNPCDialogue : MonoBehaviour
 		foreach (char c in dialogue.ToCharArray())
 		{
 			dialogueText.text += c;
-			yield return new WaitForSeconds(0.1f);
+			yield return new WaitForSeconds(wordSpeed);
 		}
 		yield return new WaitForSeconds(2f);
 		other.enabled = true;
